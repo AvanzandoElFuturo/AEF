@@ -1,0 +1,135 @@
+/* Estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  background-color: #245b92;
+}
+
+/* Título principal */
+h1 {
+  font-size: 2.8rem;
+  margin: 40px 20px 30px;
+  color: #1b2631;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* Galería */
+.tool-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Tarjetas */
+.tool-gallery a {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.tool img {
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.tool p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.tool-gallery a:hover .tool {
+  transform: translateY(-8px);
+  border: 2px solid #f39c12;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Buscador */
+.search-container {
+  max-width: 400px;
+  margin: 0 auto 20px;
+  padding: 0 20px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+  border-color: #f39c12;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(243, 156, 18, 0.2);
+}
+
+/* Mensaje de no resultados */
+.no-results {
+  margin-top: 30px;
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #1b2631;
+  padding: 20px;
+  color: #ecf0f1;
+  font-size: 0.95rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer a {
+  color: #f39c12;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

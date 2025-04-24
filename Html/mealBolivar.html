@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herramientas MEL - Bolívar</title>
+    <link rel="stylesheet" href="../Css/StyleNav.css" />
+    <link rel="stylesheet" href="../Css/stylemealbolivar.css" />
+    <link rel="icon" href="../Img/SimboloAEF-naranja.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <a href="../index.html">
+          <img
+            class="logo"
+            src="../Img/Logo MC X AEF 4.png"
+            alt="Logo Avanzando El Futuro"
+          />
+        </a>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <img src="../Img/Menu_Cerrado.png" id="menu-icon" />
+      </button>
+
+      <nav>
+        <ul class="menu">
+          <li class="navtext">
+            <a href="seleccionarProgramaMEL.html">
+              <button class="btn-iniciar-sesion">Atras</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>MEL - Bolívar</h1>
+
+      <!-- 🔍 Buscador -->
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Buscar herramienta..."
+          onkeyup="filtrarHerramientas()"
+        />
+      </div>
+
+      <!--  Herramientas -->
+      <div class="tool-gallery" id="toolGallery">
+        <a href="" target="_blank">
+          <div class="tool">
+            <img src="../Img/gif/analytics (1).gif" alt="Indicador" />
+            <p>Indicador</p>
+          </div>
+        </a>
+
+        <a href="">
+          <div class="tool">
+            <img src="../Img/gif/browser (1).gif" alt="Estado" />
+            <p>Estado</p>
+          </div>
+        </a>
+
+        <a href="" target="_blank">
+          <div class="tool">
+            <img src="../Img/gif/folder (1).gif" alt="Reporte" />
+            <p>Reporte</p>
+          </div>
+        </a>
+
+        <a href="" target="_blank">
+          <div class="tool">
+            <img src="../Img/gif/global-connection.gif" alt="Comunicacion" />
+            <p>Comunicacion</p>
+          </div>
+        </a>
+
+        <a href="" target="_blank">
+          <div class="tool">
+            <img src="../Img/gif/judges.gif" alt="Form" />
+            <p>Revision</p>
+          </div>
+        </a>
+      </div>
+
+      <!--  Sin resultados -->
+      <p id="noResults" class="no-results" style="display: none">
+        No se encontraron herramientas con ese nombre.
+      </p>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 Avanzando El Futuro x Mercy Corps. Todos los derechos
+        reservados.
+      </p>
+    </footer>
+
+    <script src="../JavaScript/scriptBusqueda.js"></script>
+    <script src="../JavaScript/scriptMenu.js" ></script>
+     </body>
+  </body>
+</html>

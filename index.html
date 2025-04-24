@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avanzando El Futuro</title>
+    <link rel="stylesheet" href="Css/StyleNav.css" />
+    <link rel="stylesheet" href="Css/styles.css" />
+
+    <link rel="icon" href="Img/SimboloAEF-naranja.ico" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-container">
+        <a href="index.html">
+          <img
+            class="logo"
+            src="Img/Logo MC X AEF 4.png"
+            alt="Logo Avanzando El Futuro"
+          />
+        </a>
+      </div>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <img src="Img/Menu_Cerrado.png" id="menu-icon" />
+      </button>
+
+      <nav>
+        <ul class="menu">
+          <li class="navtext">
+            <a
+              href="https://mercycorps.org.co/programas/avanzando-el-futuro-qamfpZfYxaWs0auoy6qanw/"
+              target="_blank"
+              >¿Quiénes Somos?</a
+            >
+          </li>
+          <li class="navtext"><a href="Html/contacto.html">Contacto</a></li>
+          <li>
+            <a href="Html/participar.html"
+              ><button class="btn-participar">Participar</button></a
+            >
+          </li>
+          <li>
+            <a href="Html/login.html">
+              <button class="btn-iniciar-sesion">Iniciar Sesión</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section with Video -->
+    <section class="hero">
+      <div class="hero-video-container">
+        <video id="hero-video" muted playsinline>
+          <source src="Video/AEF/1.mp4" type="video/mp4" />
+          Tu navegador no soporta el elemento de video.
+        </video>
+      </div>
+      <div class="hero-overlay">
+        <h1>Avanzando El Futuro</h1>
+        <p>
+          Un programa que promueve el desarrollo sostenible y la innovación.
+          ¡Únete a nosotros!
+        </p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="quienes-somos">
+      <div class="about-content">
+        <h2>¿Qué es Avanzando El Futuro?</h2>
+        <p>
+          <strong>Avanzando El Futuro (AEF)</strong> es un programa financiado
+          por la Oficina de Población, Refugiados y Migración (PRM) del
+          Departamento de Estado de los Estados Unidos. Su objetivo es brindar
+          asistencia humanitaria integral a personas refugiadas venezolanas,
+          colombianas retornadas y comunidades de acogida en situación de
+          vulnerabilidad. <br /><br />
+          A través de espacios participativos como los grupos ConVos, las
+          personas reciben acompañamiento psicosocial, formación para el empleo,
+          fortalecimiento de medios de vida, orientación en salud y apoyo para
+          su integración en las comunidades.
+          <br /><br />
+          Con presencia en varios departamentos del país, AEF contribuye al
+          bienestar, la recuperación emocional y la construcción de
+          oportunidades sostenibles para miles de personas.
+        </p>
+      </div>
+    </section>
+
+    <!-- Components -->
+    <section class="components">
+      <div class="component" id="medios-vida">
+        <h3>Medios de Vida</h3>
+        <p>
+          El componente <strong>Medios de Vida</strong> tiene como objetivo
+          mejorar las condiciones económicas de las comunidades vulnerables
+          mediante el fortalecimiento de habilidades y la creación de nuevas
+          oportunidades de empleo.
+        </p>
+      </div>
+      <div class="component" id="salud">
+        <h3>Salud</h3>
+        <p>
+          El componente <strong>Salud</strong> se enfoca en el acceso a atención
+          médica básica y servicios de salud mental, promoviendo el bienestar
+          general de las comunidades.
+        </p>
+      </div>
+      <div class="component" id="bienestar-social">
+        <h3>Bienestar Social</h3>
+        <p>
+          El componente de <strong>Bienestar Social</strong> trabaja para
+          garantizar la seguridad y los derechos de las personas en situaciones
+          de vulnerabilidad.
+        </p>
+      </div>
+    </section>
+
+    <!-- Implementación -->
+    <section class="implementacion">
+      <div class="implementacion-content">
+        <h2>Implementación del Programa</h2>
+        <p>Haz clic en cada departamento para ver sus municipios.</p>
+        <div class="departamentos">
+          <!-- Bolívar -->
+          <div class="departamento">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="Img/bolivar.svg" alt="Bolívar" />
+                <h3>Bolívar</h3>
+                <p>Desarrollo sostenible</p>
+              </div>
+              <div class="card-back">
+                <h3>Municipios</h3>
+                <ul>
+                  <li>Cartagena</li>
+                  <li>Turbaco</li>
+                  <li>Arjona</li>
+                  <li>Maria La baja</li>
+                  <li>San Juan Nepomuceno</li>
+                  <li>El Carmen de Bolívar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- César -->
+          <div class="departamento">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="Img/cesar.svg" alt="Cesar" />
+                <h3>Cesar</h3>
+                <p>Mejora de calidad de vida.</p>
+              </div>
+              <div class="card-back">
+                <h3>Municipios</h3>
+                <ul>
+                  <li>Valledupar</li>
+                  <li>La Paz</li>
+                  <li>Curumaní</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Antioquia -->
+          <div class="departamento">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="Img/antioquia.svg" alt="Antioquia" />
+                <h3>Antioquia</h3>
+                <p>Acceso a salud.</p>
+              </div>
+              <div class="card-back">
+                <h3>Municipios</h3>
+                <ul>
+                  <li>Girardota - Copacabana - Barbosa</li>
+                  <li>Bello - Medellín - Sabaneta</li>
+                  <li>Envigado - Itagüí - Caldas</li>
+                  <li>La Estrella - Amagá - Rionegro</li>
+                  <li>Marinilla - Santuario - El Carmen de Viboral</li>
+                  <li>La Ceja - Guarne</li>
+                  <li>Necoclí - Turbo - Apartadó</li>
+                  <li>Chigorodó - Carepa - Mutatá</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+      <div class="footer-content">
+        <ul class="footer-links">
+          <li><a href="#medios-vida">Medios de Vida</a></li>
+          <li><a href="#salud">Salud</a></li>
+          <li><a href="#bienestar-social">Bienestar Social</a></li>
+        </ul>
+        <p>
+          &copy; 2025 Avanzando El Futuro x Mercy Corps. Todos los derechos
+          reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script src="JavaScript/scripts.js"></script>
+  </body>
+</html>

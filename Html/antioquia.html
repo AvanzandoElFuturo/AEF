@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herramientas - Antioquia</title>
+    <link rel="stylesheet" href="../Css/StyleNav.css" />
+    <link rel="stylesheet" href="../Css/stylesAntioquia.css" />
+    <link rel="icon" href="../Img/SimboloAEF-naranja.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <a href="../index.html">
+          <img
+            class="logo"
+            src="../Img/Logo MC X AEF 4.png"
+            alt="Logo Avanzando El Futuro"
+          />
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <h1>Herramientas Disponibles - Antioquia</h1>
+
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Buscar herramienta..."
+          oninput="filtrarHerramientas()"
+        />
+      </div>
+
+      <div class="tool-container tool-gallery">
+        <a class="tool" href="#">
+          <img src="../Img/gif/evolution.gif" alt="Gráficos" />
+          <p>Visualización de datos</p>
+        </a>
+        <a class="tool" href="#">
+          <img src="../Img/gif/analytics (1).gif" alt="Tiempo" />
+          <p>Gestión de tiempo</p>
+        </a>
+        <a class="tool" href="#">
+          <img src="../Img/gif/analytics.gif" alt="Tecnología" />
+          <p>Plataformas digitales</p>
+        </a>
+        <a class="tool" href="#">
+          <img src="../Img/gif/browser (1).gif" alt="Galería" />
+          <p>Gestor de imágenes</p>
+        </a>
+        <a class="tool" href="#">
+          <img src="../Img/gif/chart.gif" alt="Configuración" />
+          <p>Personalización</p>
+        </a>
+      </div>
+
+      <div id="noResults" class="no-results" style="display: none">
+        No se encontraron herramientas.
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 Avanzando El Futuro x Mercy Corps. Todos los derechos
+        reservados.
+      </p>
+    </footer>
+
+    <script src="../JavaScript/scriptBusqueda.js"></script>
+  </body>
+</html>

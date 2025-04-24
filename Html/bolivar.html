@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herramientas - Bolívar</title>
+    <link rel="stylesheet" href="../Css/StyleNav.css" />
+    <link rel="stylesheet" href="../Css/stylesBolivar.css" />
+    <link rel="icon" href="../Img/SimboloAEF-naranja.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <a href="../index.html">
+          <img
+            class="logo"
+            src="../Img/Logo MC X AEF 4.png"
+            alt="Logo Avanzando El Futuro"
+          />
+        </a>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <img src="../Img/Menu_Cerrado.png" id="menu-icon" />
+      </button>
+
+      <nav>
+        <ul class="menu">
+          <li class="navtext">
+            <a href="seleccionarProgramaMEL.html">
+              <button class="btn-iniciar-sesion">Atras</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Herramientas Disponibles - Bolívar</h1>
+
+      <!-- 🔍 Buscador -->
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Buscar herramienta..."
+          onkeyup="filtrarHerramientas()"
+        />
+      </div>
+
+      <!-- 🧰 Herramientas -->
+      <div class="tool-gallery" id="toolGallery">
+        <a
+          href="https://mercycorpsemea.sharepoint.com/:x:/r/sites/MSRTeam5762/_layouts/15/Doc.aspx?sourcedoc=%7B22E4387F-84AF-4BAB-9207-E2F522A71F8B%7D&file=Grupos%20ConVos_Emprendimiento.xlsx&action=default&mobileredirect=true"
+          target="_blank"
+        >
+          <div class="tool">
+            <img
+              src="../Img/gif/management-consulting.gif"
+              alt="Emprendimiento"
+            />
+            <p>Grupo Convos Emprendimiento</p>
+          </div>
+        </a>
+
+        <a href="">
+          <div class="tool">
+            <img src="../Img/gif/team-building.gif" alt="Empleabilidad" />
+            <p>Grupo Convos Empleabilidad</p>
+          </div>
+        </a>
+
+        <a
+          href="https://mercycorpsemea.sharepoint.com/:x:/r/sites/MSRTeam5762/_layouts/15/Doc.aspx?sourcedoc=%7BD803BB73-CD39-47DE-BE23-9751B2CB8786%7D&file=FORMATO%20REFERIDOS-CICLO%202.xlsx&action=default&mobileredirect=true"
+          target="_blank"
+        >
+          <div class="tool">
+            <img src="../Img/gif/refer.gif" alt="Referidos" />
+            <p>Referidos Convos</p>
+          </div>
+        </a>
+
+        <a
+          href="https://mercycorpsemea.sharepoint.com/:x:/r/sites/MSRTeam5762/_layouts/15/Doc.aspx?sourcedoc=%7B014576B7-ED09-4885-8FED-240904CD2623%7D&file=Seguimiento%20Asistencias%20de%20activiades.xlsx&action=default&mobileredirect=true"
+          target="_blank"
+        >
+          <div class="tool">
+            <img src="../Img/gif/list.gif" alt="Seguimiento" />
+            <p>Seguimiento Asistencia</p>
+          </div>
+        </a>
+
+        <a
+          href="https://forms.office.com/Pages/ResponsePage.aspx?id=KIbeCD5Z9UOc6_Pl3Xriy_jqjV1nx2dJjBNOQ_nYUEBUNkdQNVBZMlNQT0FKTjFVRFlHUFlDUDRPRi4u"
+          target="_blank"
+        >
+          <div class="tool">
+            <img src="../Img/gif/sign-form.gif" alt="Form" />
+            <p>Microsoft Form</p>
+          </div>
+        </a>
+
+        <a
+          href="https://mercycorpsemea.sharepoint.com/:x:/r/sites/MSRTeam5762/_layouts/15/Doc.aspx?sourcedoc=%7BDC96BE87-998E-456C-8B43-05EE43B47845%7D&file=Matriz%20de%20Movimientos%20Programatica%20AEF.xlsx&action=default&mobileredirect=true&isSPOFile=1&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDA5MDEwMTQyMSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
+          target="_blank"
+        >
+          <div class="tool">
+            <img src="../Img/gif/truck.gif" alt="Matrix De Movimiento" />
+            <p>Matrix De Movimiento</p>
+          </div>
+        </a>
+        <a href="https://ee.kobotoolbox.org/x/mRo5b9eh" target="_blank">
+          <div class="tool">
+            <img src="../Img/gif/report.gif" alt="Salud" />
+            <p>Reporte Terreno</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- ❌ Sin resultados -->
+      <p id="noResults" class="no-results" style="display: none">
+        No se encontraron herramientas con ese nombre.
+      </p>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 Avanzando El Futuro x Mercy Corps. Todos los derechos
+        reservados.
+      </p>
+    </footer>
+
+    <script src="../JavaScript/scriptBusqueda.js"></script>
+    <script src="../JavaScript/scriptMenu.js"></script>
+    <script></script>
+  </body>
+</html>

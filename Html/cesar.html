@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herramientas - Regional César</title>
+    <link rel="stylesheet" href="../Css/StyleNav.css" />
+    <link rel="stylesheet" href="../Css/stylesCesar.css" />
+    <link rel="icon" href="../Img/SimboloAEF-naranja.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <a href="../index.html">
+          <img
+            class="logo"
+            src="../Img/Logo MC X AEF 4.png"
+            alt="Logo Avanzando El Futuro"
+          />
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Herramientas Disponibles - César</h1>
+      </section>
+
+      <!-- Buscador -->
+      <section class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          onkeyup="filtrarHerramientas()"
+          placeholder="Buscar herramienta..."
+        />
+      </section>
+
+      <section class="tool-gallery">
+        <a href="#"
+          ><div class="tool">
+            <img src="../Img/gif/evolution.gif" alt="Gráficos" />
+            <p>Visualización de datos</p>
+          </div></a
+        >
+        <a href="#"
+          ><div class="tool">
+            <img src="../Img/gif/load-time.gif" alt="Tiempo" />
+            <p>Gestión de tiempo</p>
+          </div></a
+        >
+        <a href="#"
+          ><div class="tool">
+            <img src="../Img/gif/chip (1).gif" alt="Tecnología" />
+            <p>Plataformas digitales</p>
+          </div></a
+        >
+        <a href="#"
+          ><div class="tool">
+            <img src="../Img/gif/ecg-monitor.gif" alt="Galería" />
+            <p>Gestor de imágenes</p>
+          </div></a
+        >
+        <a href="#"
+          ><div class="tool">
+            <img src="../Img/gif/system-file.gif" alt="Configuración" />
+            <p>Personalización</p>
+          </div></a
+        >
+      </section>
+
+      <!-- Mensaje si no hay resultados -->
+      <p id="noResults" class="no-results" style="display: none">
+        No se encontraron herramientas.
+      </p>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 Avanzando El Futuro x Mercy Corps. Todos los derechos
+        reservados.
+      </p>
+    </footer>
+
+    <script src="../JavaScript/scriptBusqueda.js"></script>
+  </body>
+</html>
